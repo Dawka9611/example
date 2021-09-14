@@ -1,0 +1,121 @@
+body{
+    background: url(images/bg.png) center center fixed;
+    background-size: cover;
+    font-family: Roboto sans-serif;
+}
+
+form{
+    margin: 270px auto 0px auto;
+    height: 500px;
+    width: 350px;
+    box-shadow: grey;
+    
+}
+.container{
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    box-shadow: 0 1px 3px #c0c0c0;
+}
+#content{
+    margin-left: 60px;
+}
+.right{
+    float: right;
+    font-size: 13px;
+}
+.menuItem{
+    height: 25px;
+    width: 25px
+}
+.formItem{
+    margin-top: 20px;
+}
+#email, #password,.formItem{
+    font-size: 13px;
+}
+.button{
+    margin-top: 30px;
+}
+
+ #wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    overflow: hidden;
+ }
+ 
+ #wrapper.toggled {
+    padding-left: 250px;
+    overflow: hidden;
+ }
+ #nav-bar:active{
+    width: 100px;
+ }
+ #sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #2c2c7c;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+ }
+ #sidebar-wrapper{
+     width: 50px;
+ 
+ }
+ #wrapper.toggled  {
+    width: 250px;
+ }
+ 
+ #page-content-wrapper {
+    position: absolute;
+    padding: 15px;
+    width: 100%;
+    overflow-x: hidden;
+ }
+
+ #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0px;
+ }
+
+ /* Sidebar Styles */
+ 
+ .sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 2px;
+ }
+ 
+ .sidebar-nav li a{
+    text-indent: 3px;
+    line-height: 40px;
+    color: #ffffff;
+ }
+
+ @media (max-width: 350px) {
+    #wrapper {
+       padding-left: 250px;
+    }
+ }
+  #sidebar-wrapper.fullWidth {
+    width: 200px;
+}
+
+
+ 

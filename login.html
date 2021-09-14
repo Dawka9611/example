@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Example</title>
+  </head>
+  <body>
+    <div class="navbar-custom"> 
+        <div class="l-navbar" id="nav-bar">
+             <div id="wrapper">
+                <!-- Sidebar -->
+                <div id="sidebar-wrapper">
+                   <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html"><img src="images/home.png" class="menuItem"> Нүүр</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="login.html"><img src="images/login.png" class="menuItem"> Нэвтрэх</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="singup.html"><img src="images/signup.png" class="menuItem"> Бүртгүүлэх</a>
+                          </li>              
+                   </ul>
+                </div>
+             </div>  
+        </div>
+    </div>
+
+      <form method="POST" id="loginForm">
+          <div class="container">
+          <div id="login"  >
+              <div>
+                <label class="form-label">Тавтай морилно уу</label>
+              </div>
+            <div class="email">
+                <input type="email" class="form-control formItem" id="email" placeholder="И-мэйл хаяг">
+              </div>
+              <div class="password">
+                <input type="password" class="form-control formItem" id="password" placeholder="Нууц үг">
+              </div>
+              <div><a href="index.html" class="right">Нууц үгээ мартсан</a></div>
+              <div class="button">
+                  <button class="btn btn-outline-secondary"> Нэвтрэх</button>
+              </div>
+              <div>
+                <label class="formItem" id="label">
+                    Бүртгэл үүсгээгүй бол <a href="singup.html">энд дарж нэвтэрч орно уу</a>
+                </label>
+            </div>
+          </div>
+        </div>
+    </form>
+   </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script >
+        var sideWrapper = $("#sidebar-wrapper");
+        sideWrapper.click(function(e)
+        {
+         sideWrapper.toggleClass('fullWidth');  
+        });  
+       
+    </script>
+  </body>
+</html>
